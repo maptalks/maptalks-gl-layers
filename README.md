@@ -15,13 +15,13 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 
 包含了ESM和umd两种格式，方便不同方式的引用。
 
-## 用法
+## 安装
 
 ```shell
 npm i @maptalks/maptalks-gl-layers
 ```
 
-## 程序示例
+## 用法
 
 ```js
 import { GroupGLLayer, VectorTileLayer, GLTFMarker, GLTFLayer } from '@maptalks/gl-layers';
