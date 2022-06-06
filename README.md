@@ -58,3 +58,16 @@ const groupLayer = new maptalks.GroupGLLayer('group', [vt]).addTo(map);
     const groupLayer = new maptalks.GroupGLLayer('group', [vt]).addTo(map);
 </script>
 ```
+
+## gl格式解码插件
+
+如果需要引入draco，ktx2等gl格式解码插件，和以前一样，引入汇总包后，引入解码插件即可：
+```js
+import { Geo3DTilesLayer } from '@maptalks/gl-layers';
+// 可选的draco插件
+import '@maptalks/transcoders.draco';
+// 可选的crn纹理解析插件
+import '@maptalks/transcoders.crn';
+// 可选的ktx2纹理解析插件
+import '@maptalks/transcoders.ktx2';
+```
