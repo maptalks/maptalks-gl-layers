@@ -1,6 +1,6 @@
 import { GroupGLLayer, GroundPainter, HeatmapProcess, GLContext, ViewshedAnalysis, FloodAnalysis, SkylineAnalysis, InSightAnalysis } from '@maptalks/gl';
 import {
-	VectorTileLayer,
+    VectorTileLayer,
     MapboxVectorTileLayer,
     GeoJSONVectorTileLayer,
     VectorTileLayerRenderer,
@@ -15,9 +15,12 @@ import {
 } from '@maptalks/vt';
 import { Geo3DTilesLayer } from '@maptalks/3dtiles';
 import { GLTFLayer, GLTFMarker, MultiGLTFMarker } from '@maptalks/gltf-layer';
+export * from '@maptalks/transform-control';
+export * from '@maptalks/msd-json-loader';
+//todo @maptalks/video-layer
 
-export { 
-	VectorTileLayer,
+export {
+    VectorTileLayer,
     MapboxVectorTileLayer,
     GeoJSONVectorTileLayer,
     VectorTileLayerRenderer,
