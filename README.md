@@ -11,6 +11,10 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 * @maptalks/gltf-layer
 * @maptalks/3dtiles
 
+## 汇总包格式
+
+包含了ESM和umd两种格式，方便不同方式的引用。
+
 ## 用法
 
 ```shell
