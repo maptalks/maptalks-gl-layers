@@ -6,7 +6,8 @@
   "main": "dist/maptalks-gl-layers.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js",
-    "build": "rollup -c rollup.config.js"
+    "build": "rollup -c rollup.config.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
