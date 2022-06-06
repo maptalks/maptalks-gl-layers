@@ -18,24 +18,36 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 ## 安装
 
 ```shell
+npm i maptalks
 npm i @maptalks/maptalks-gl-layers
+
+#or
+
+yarn add maptalks
+yarn add @maptalks/maptalks-gl-layers
+
+#or
+
+pnpm i maptalks
+pnpm i @maptalks/maptalks-gl-layers
 ```
 
 ## 用法
 
 ```js
+import * as maptalks from 'maptalks';
 import { GroupGLLayer, VectorTileLayer, GLTFMarker, GLTFLayer } from '@maptalks/gl-layers';
 
 const map = new maptalks.Map('map', {
     center: [0, 0],
     zoom: 2
 });
-const vtLayer = maptalks.VectorTileLayer('vt', {
+const vtLayer = new VectorTileLayer('vt', {
     urlTemplate: 'http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt',
     spatialReference: 'preset-vt-3857'
 });
 
-const groupLayer = new maptalks.GroupGLLayer('group', [vt]).addTo(map);
+const groupLayer = new GroupGLLayer('group', [vt]).addTo(map);
 ```
 
 ## CDN
