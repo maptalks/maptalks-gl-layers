@@ -15,9 +15,9 @@ module.exports = [
         input: 'index.js',
         plugins: [
             nodeResolve({
-                module : true,
+                module: true,
                 // jsnext : true,
-                main : true
+                main: true
             }),
             commonjs(),
             terser({
@@ -35,9 +35,10 @@ module.exports = [
         ],
         external: ['maptalks'],
         output: {
-            globals: { 
+            globals: {
                 'maptalks': 'maptalks'
             },
+            sourcemap: true,
             banner,
             outro,
             extend: true,
