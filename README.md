@@ -1,4 +1,4 @@
-# maptalks-gl-layers
+# @maptalks/gl-layers
 
 maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础设施和所有webgl图层插件。
 
