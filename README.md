@@ -1,4 +1,4 @@
-# maptalks-gl-layers
+# @maptalks/gl-layers
 
 maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础设施和所有webgl图层插件。
 
@@ -19,17 +19,17 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 
 ```shell
 npm i maptalks
-npm i @maptalks/maptalks-gl-layers
+npm i @maptalks/gl-layers
 
 #or
 
 yarn add maptalks
-yarn add @maptalks/maptalks-gl-layers
+yarn add @maptalks/gl-layers
 
 #or
 
 pnpm i maptalks
-pnpm i @maptalks/maptalks-gl-layers
+pnpm i @maptalks/gl-layers
 ```
 
 ## 用法
