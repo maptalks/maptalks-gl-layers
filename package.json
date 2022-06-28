@@ -2,8 +2,9 @@
   "name": "@maptalks/gl-layers",
   "version": "0.3.0",
   "description": "All-in-one package for maptalks webgl layers",
-  "module": "index.js",
+  "module": "index.mjs",
   "main": "dist/maptalks-gl-layers.js",
+  "browser": "dist/maptalks-gl-layers.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js",
     "build": "rollup -c rollup.config.js",
@@ -35,6 +36,7 @@
     "@maptalks/3dtiles": "^0.15.3",
     "@maptalks/gl": "^0.71.0",
     "@maptalks/gltf-layer": "^0.33.5",
+    "@maptalks/video-layer": "^0.2.1",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.6.1",
     "@maptalks/vt": "^0.68.0"

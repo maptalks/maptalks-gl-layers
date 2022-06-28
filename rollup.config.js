@@ -12,7 +12,7 @@ outro = `typeof console !== 'undefined' && console.log('${outro}');`;
 
 module.exports = [
     {
-        input: 'index.js',
+        input: 'index.mjs',
         plugins: [
             nodeResolve({
                 module: true,
