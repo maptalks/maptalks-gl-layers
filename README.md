@@ -7,6 +7,7 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 ## 包含的插件
 
 * @maptalks/gl
+* @maptalks/analysis
 * @maptalks/vt
 * @maptalks/gltf-layer
 * @maptalks/3dtiles
