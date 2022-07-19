@@ -34,12 +34,12 @@
   },
   "dependencies": {
     "@maptalks/3dtiles": "^0.18.2",
-    "@maptalks/gl": "^0.73.2",
-    "@maptalks/analysis": "^0.73.2",
+    "@maptalks/gl": "^0.73.3",
+    "@maptalks/analysis": "^0.73.3",
     "@maptalks/gltf-layer": "^0.33.5",
     "@maptalks/video-layer": "^0.2.1",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.6.1",
-    "@maptalks/vt": "^0.69.0"
+    "@maptalks/vt": "^0.70.0"
   }
 }
