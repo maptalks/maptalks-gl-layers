@@ -4,10 +4,10 @@
   "description": "All-in-one package for maptalks webgl layers",
   "module": "index.mjs",
   "main": "dist/maptalks-gl-layers.js",
-  "browser": "dist/maptalks-gl-layers.js",
+  "browser": "dist/maptalks-gl-layers.min.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js",
-    "build": "rollup -c rollup.config.js",
+    "build": "rollup -c rollup.config.js && node ./minify.js",
     "prepare": "npm run build"
   },
   "repository": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/fuzhenn/maptalks-gl-layers#readme",
   "devDependencies": {
+    "@swc/core": "^1.2.218",
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "maptalks": "^1.0.0-rc.8",
@@ -34,12 +35,12 @@
   },
   "dependencies": {
     "@maptalks/3dtiles": "^0.18.2",
-    "@maptalks/gl": "^0.73.3",
     "@maptalks/analysis": "^0.73.3",
+    "@maptalks/gl": "^0.73.3",
     "@maptalks/gltf-layer": "^0.33.5",
-    "@maptalks/video-layer": "^0.2.2",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.6.1",
+    "@maptalks/video-layer": "^0.2.2",
     "@maptalks/vt": "^0.70.0"
   }
 }
