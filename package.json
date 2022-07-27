@@ -10,6 +10,11 @@
     "build": "rollup -c rollup.config.js && node ./minify.js",
     "prepare": "npm run build"
   },
+  "files": [
+    "dist/maptalks-gl-layers.js",
+    "dist/maptalks-gl-layers.min.js",
+    "index.mjs"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fuzhenn/maptalks-gl-layers.git"
