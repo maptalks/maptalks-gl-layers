@@ -35,7 +35,7 @@
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "maptalks": "^1.0.0-rc.10",
-    "rollup": "^2.77.2",
+    "rollup": "^2.77.3",
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
@@ -46,6 +46,6 @@
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.7.0",
     "@maptalks/video-layer": "^0.2.2",
-    "@maptalks/vt": "^0.74.1"
+    "@maptalks/vt": "^0.74.2"
   }
 }
