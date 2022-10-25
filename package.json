@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "@maptalks/3dtiles": "^0.20.0",
-    "@maptalks/analysis": "^0.78.0",
-    "@maptalks/gl": "^0.78.0",
+    "@maptalks/analysis": "^0.78.1",
+    "@maptalks/gl": "^0.78.1",
     "@maptalks/gltf-layer": "^0.34.2",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.7.0",
