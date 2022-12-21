@@ -4,6 +4,8 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 
 使用时无需再单独安装和引入其他webgl插件，而可以统一从此包中安装引用。
 
+该仓库只供发布使用，请在[这里报告使用过程中的相关bug](https://github.com/maptalks/issues/issues)
+
 ## 包含的插件
 
 * @maptalks/gl
