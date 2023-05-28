@@ -38,7 +38,7 @@ module.exports = [
             globals: {
                 'maptalks': 'maptalks'
             },
-            sourcemap: true,
+            sourcemap: false,
             banner,
             outro,
             extend: true,
