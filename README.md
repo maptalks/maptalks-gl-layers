@@ -39,12 +39,12 @@ pnpm i @maptalks/gl-layers
 ```
 
 ## 用法
-
+### ESM
 ```js
-import * as maptalks from 'maptalks';
+import { Map} from 'maptalks';
 import { GroupGLLayer, VectorTileLayer, GLTFMarker, GLTFLayer } from '@maptalks/gl-layers';
 
-const map = new maptalks.Map('map', {
+const map = new Map('map', {
     center: [0, 0],
     zoom: 2
 });
@@ -56,9 +56,9 @@ const vtLayer = new VectorTileLayer('vt', {
 const groupLayer = new GroupGLLayer('group', [vt]).addTo(map);
 ```
 
-## CDN
+### CDN
 
-也可以通过CDN引用umd格式的汇总包。
+也可以通过CDN引用umd格式的汇总包,注意gl体系下的所有导出变量会自动挂载到`maptalks`命名空间
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>

@@ -4,7 +4,8 @@
   "description": "All-in-one package for maptalks webgl layers",
   "module": "index.mjs",
   "main": "dist/maptalks-gl-layers.js",
-  "browser": "dist/maptalks-gl-layers.min.js",
+  "unpkg": "dist/maptalks-gl-layers.min.js",
+  "jsdelivr": "dist/maptalks-gl-layers.min.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js",
     "build": "rollup -c rollup.config.js && node ./minify.js",
