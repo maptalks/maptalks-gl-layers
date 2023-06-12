@@ -4,16 +4,15 @@
   "description": "All-in-one package for maptalks webgl layers",
   "module": "index.mjs",
   "main": "dist/maptalks-gl-layers.js",
-  "unpkg": "dist/maptalks-gl-layers.min.js",
-  "jsdelivr": "dist/maptalks-gl-layers.min.js",
+  "unpkg": "dist/maptalks-gl-layers.js",
+  "jsdelivr": "dist/maptalks-gl-layers.js",
   "scripts": {
     "dev": "rollup -w -c rollup.config.js",
-    "build": "rollup -c rollup.config.js && node ./minify.js",
+    "build": "rollup -c rollup.config.js",
     "prepare": "npm run build"
   },
   "files": [
     "dist/maptalks-gl-layers.js",
-    "dist/maptalks-gl-layers.min.js",
     "index.mjs"
   ],
   "repository": {
