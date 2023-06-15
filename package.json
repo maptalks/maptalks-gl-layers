@@ -34,15 +34,14 @@
     "@swc/core": "^1.2.224",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
-    "maptalks": "^1.0.0-rc.21",
     "rollup": "^2.77.3",
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "@maptalks/3dtiles": "^0.84.2",
-    "@maptalks/analysis": "^0.84.2",
+    "@maptalks/3dtiles": "^0.84.3",
+    "@maptalks/analysis": "^0.84.3",
     "@maptalks/gl": "^0.84.2",
-    "@maptalks/gltf-layer": "^0.84.2",
+    "@maptalks/gltf-layer": "^0.84.3",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.84.2",
     "@maptalks/video-layer": "^0.84.2",
