@@ -2,7 +2,7 @@
   "name": "@maptalks/gl-layers",
   "version": "0.21.1",
   "description": "All-in-one package for maptalks webgl layers",
-  "module": "index.mjs",
+  "module": "index.js",
   "main": "dist/maptalks-gl-layers.js",
   "unpkg": "dist/maptalks-gl-layers.js",
   "jsdelivr": "dist/maptalks-gl-layers.js",
