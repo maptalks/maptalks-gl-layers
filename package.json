@@ -38,13 +38,13 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "@maptalks/3dtiles": "^0.84.6",
-    "@maptalks/analysis": "^0.84.5",
-    "@maptalks/gl": "^0.84.6",
-    "@maptalks/gltf-layer": "^0.84.5",
+    "@maptalks/3dtiles": "^0.86.0",
+    "@maptalks/analysis": "^0.86.0",
+    "@maptalks/gl": "^0.86.0",
+    "@maptalks/gltf-layer": "^0.86.0",
     "@maptalks/msd-json-loader": "^0.1.0",
-    "@maptalks/transform-control": "^0.84.5",
-    "@maptalks/video-layer": "^0.84.5",
-    "@maptalks/vt": "^0.82.2"
+    "@maptalks/transform-control": "^0.86.0",
+    "@maptalks/video-layer": "^0.86.0",
+    "@maptalks/vt": "^0.84.0"
   }
 }
