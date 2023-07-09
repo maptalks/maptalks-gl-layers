@@ -45,6 +45,6 @@
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.87.1",
     "@maptalks/video-layer": "^0.87.1",
-    "@maptalks/vt": "^0.85.1"
+    "@maptalks/vt": "^0.85.2"
   }
 }
