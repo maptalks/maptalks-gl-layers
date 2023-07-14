@@ -38,7 +38,7 @@
     "rollup-plugin-terser": "^7.0.2"
   },
   "dependencies": {
-    "@maptalks/3dtiles": "^0.88.1",
+    "@maptalks/3dtiles": "^0.88.2",
     "@maptalks/analysis": "^0.88.0",
     "@maptalks/gl": "^0.88.2",
     "@maptalks/gltf-layer": "^0.88.0",
