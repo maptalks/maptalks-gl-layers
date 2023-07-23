@@ -31,7 +31,6 @@
   },
   "homepage": "https://github.com/fuzhenn/maptalks-gl-layers#readme",
   "devDependencies": {
-    "@swc/core": "^1.2.224",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "rollup": "^2.77.3",
@@ -45,6 +44,6 @@
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.88.0",
     "@maptalks/video-layer": "^0.88.0",
-    "@maptalks/vt": "^0.86.2"
+    "@maptalks/vt": "^0.86.3"
   }
 }
