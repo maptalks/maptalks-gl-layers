@@ -39,7 +39,7 @@
   "dependencies": {
     "@maptalks/3dtiles": "^0.89.3",
     "@maptalks/analysis": "^0.89.3",
-    "@maptalks/gl": "^0.89.3",
+    "@maptalks/gl": "^0.89.4",
     "@maptalks/gltf-layer": "^0.89.3",
     "@maptalks/msd-json-loader": "^0.1.0",
     "@maptalks/transform-control": "^0.89.3",
