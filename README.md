@@ -39,10 +39,20 @@ pnpm i @maptalks/gl-layers
 ```
 
 ## 用法
+
 ### ESM
+
 ```js
-import { Map} from 'maptalks';
-import { GroupGLLayer, VectorTileLayer, GLTFMarker, GLTFLayer } from '@maptalks/gl-layers';
+import {
+    Map
+} from 'maptalks';
+import {
+    GroupGLLayer,
+    VectorTileLayer,
+    GLTFMarker,
+    GLTFLayer,
+    PolygonLayer
+} from '@maptalks/gl-layers';
 
 const map = new Map('map', {
     center: [0, 0],
@@ -52,15 +62,23 @@ const vtLayer = new VectorTileLayer('vt', {
     urlTemplate: 'http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt'
 });
 
-const groupLayer = new GroupGLLayer('group', [vt]).addTo(map);
+const groupLayer = new GroupGLLayer('group', [vtLayer]).addTo(map);
+
+const gltfLayer = new GLTFLayer('gltflayer');
+groupLayer.addLayer(gltfLayer);
+
+const polygonLayer = new PolygonLayer('polygonlayer');
+groupLayer.addLayer(polygonLayer);
+//other layers
 ```
 
 ### CDN
 
-也可以通过CDN引用umd格式的汇总包,注意gl体系下的所有导出变量会自动挂载到`maptalks`命名空间
+也可以通过CDN引用umd格式的汇总包, 注意gl体系下的所有导出变量会自动挂载到 `maptalks` 命名空间
 
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
+<!--gl package exports all variable will Mount to maptalks namespace -->
 <script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
 <script type="text/javascript">
     const map = new maptalks.Map('map', {
@@ -71,15 +89,25 @@ const groupLayer = new GroupGLLayer('group', [vt]).addTo(map);
         urlTemplate: 'http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt'
     });
 
-    const groupLayer = new maptalks.GroupGLLayer('group', [vt]).addTo(map);
+    const groupLayer = new maptalks.GroupGLLayer('group', [vtLayer]).addTo(map);
+
+    const gltfLayer = new maptalks.GLTFLayer('gltflayer');
+    groupLayer.addLayer(gltfLayer)
+    const polygonLayer = new maptalks.PolygonLayer('polygonlayer');
+    groupLayer.addLayer(polygonLayer);
+    //other layers
 </script>
 ```
 
 ## gl格式解码插件
 
 如果需要引入draco，ktx2等gl格式解码插件，和以前一样，引入汇总包后，引入解码插件即可：
+
 ```js
-import { Geo3DTilesLayer, GLTFLayer } from '@maptalks/gl-layers';
+import {
+    Geo3DTilesLayer,
+    GLTFLayer
+} from '@maptalks/gl-layers';
 // 可选的draco插件
 import '@maptalks/transcoders.draco';
 // 可选的crn纹理解析插件
@@ -87,7 +115,9 @@ import '@maptalks/transcoders.crn';
 // 可选的ktx2纹理解析插件
 import '@maptalks/transcoders.ktx2';
 ```
+
 或者umd方式：
+
 ```html
 <script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
