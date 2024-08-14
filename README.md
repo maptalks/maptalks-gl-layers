@@ -1,13 +1,14 @@
-# @maptalks/gl-layers
+# maptalks-gl
 
-maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础设施和所有webgl图层插件。
+maptalks webgl 图层的汇总包，包含了[maptalks核心库](https://github.com/maptalks/maptalks.js)和@maptalks命名空间下webgl基础设施和所有webgl图层插件。
 
 使用时无需再单独安装和引入其他webgl插件，而可以统一从此包中安装引用。
 
 该仓库只供发布使用，请在[这里报告使用过程中的相关bug](https://github.com/maptalks/issues/issues)
 
-## 包含的插件
+## 包含的库
 
+* maptalks
 * @maptalks/gl
 * @maptalks/analysis
 * @maptalks/vt
@@ -24,18 +25,15 @@ maptalks webgl 图层的汇总包，包含了@maptalks命名空间下webgl基础
 ## 安装
 
 ```shell
-npm i maptalks
-npm i @maptalks/gl-layers
+npm i maptalks-gl
 
 #or
 
-yarn add maptalks
-yarn add @maptalks/gl-layers
+yarn add maptalks-gl
 
 #or
 
-pnpm i maptalks
-pnpm i @maptalks/gl-layers
+pnpm i maptalks-gl
 ```
 
 ## 用法
@@ -44,15 +42,13 @@ pnpm i @maptalks/gl-layers
 
 ```js
 import {
-    Map
-} from 'maptalks';
-import {
+    Map,
     GroupGLLayer,
     VectorTileLayer,
     GLTFMarker,
     GLTFLayer,
     PolygonLayer
-} from '@maptalks/gl-layers';
+} from 'maptalks-gl';
 
 const map = new Map('map', {
     center: [0, 0],
@@ -77,9 +73,7 @@ groupLayer.addLayer(polygonLayer);
 也可以通过CDN引用umd格式的汇总包, 注意gl体系下的所有导出变量会自动挂载到 `maptalks` 命名空间
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<!--gl package exports all variable will Mount to maptalks namespace -->
-<script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks-gl/dist/maptalks-gl.js"></script>
 <script type="text/javascript">
     const map = new maptalks.Map('map', {
         center: [0, 0],
@@ -105,9 +99,10 @@ groupLayer.addLayer(polygonLayer);
 
 ```js
 import {
+    Map,
     Geo3DTilesLayer,
     GLTFLayer
-} from '@maptalks/gl-layers';
+} from 'maptalks-gl';
 // 可选的draco插件
 import '@maptalks/transcoders.draco';
 // 可选的crn纹理解析插件
@@ -119,8 +114,7 @@ import '@maptalks/transcoders.ktx2';
 或者umd方式：
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/maptalks/dist/maptalks.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/@maptalks/gl-layers/dist/maptalks-gl-layers.js"></script>
+<script type="text/javascript" src="https://unpkg.com/maptalks-gl/dist/maptalks-gl.js"></script>
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.draco/dist/transcoders.draco.js"></script>
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.crn/dist/transcoders.crn.js"></script>
 <script type="text/javascript" src="https://unpkg.com/@maptalks/transcoders.ktx2/dist/transcoders.ktx2.js"></script>

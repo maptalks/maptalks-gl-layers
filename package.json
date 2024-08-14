@@ -1,23 +1,27 @@
 {
-  "name": "@maptalks/gl-layers",
-  "version": "0.34.1",
+  "name": "maptalks-gl",
+  "version": "0.97.6",
   "description": "All-in-one package for maptalks webgl layers",
   "module": "index.js",
-  "main": "dist/maptalks-gl-layers.js",
-  "unpkg": "dist/maptalks-gl-layers.js",
-  "jsdelivr": "dist/maptalks-gl-layers.js",
+  "main": "dist/maptalks-gl.js",
+  "unpkg": "dist/maptalks-gl.js",
+  "jsdelivr": "dist/maptalks-gl.js",
+  "types": "index.d.ts",
   "scripts": {
+    "clean": "rimraf dist",
     "dev": "rollup -w -c rollup.config.js",
-    "build": "rollup -c rollup.config.js",
-    "prepare": "npm run build"
+    "build": "npm run clean && rollup -c rollup.config.js",
+    "prepublishOnly": "npm run build"
   },
   "files": [
-    "dist/maptalks-gl-layers.js",
-    "index.js"
+    "dist/maptalks-gl.js",
+    "dist/maptalks-gl.js.map",
+    "index.js",
+    "index.d.ts"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fuzhenn/maptalks-gl-layers.git"
+    "url": "git+https://github.com/fuzhenn/gl-layers.git"
   },
   "keywords": [
     "maptalks",
@@ -26,24 +30,22 @@
   ],
   "author": "fuzhenn",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fuzhenn/maptalks-gl-layers/issues"
-  },
-  "homepage": "https://github.com/fuzhenn/maptalks-gl-layers#readme",
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "rollup": "^2.77.3",
-    "rollup-plugin-terser": "^7.0.2"
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
+    "rollup": "^4.17.2",
+    "rollup-plugin-sourcemaps": "0.6.3"
   },
   "dependencies": {
-    "@maptalks/3dtiles": "^0.97.4",
-    "@maptalks/analysis": "^0.97.4",
-    "@maptalks/gl": "^0.97.4",
-    "@maptalks/gltf-layer": "^0.97.4",
     "@maptalks/msd-json-loader": "^0.1.0",
-    "@maptalks/transform-control": "^0.97.4",
-    "@maptalks/video-layer": "^0.97.4",
-    "@maptalks/vt": "^0.95.0"
+    "maptalks": "1.0.0-rc.36",
+    "@maptalks/3dtiles": "0.98.0",
+    "@maptalks/gl": "0.98.0",
+    "@maptalks/analysis": "0.98.0",
+    "@maptalks/gltf-layer": "0.98.0",
+    "@maptalks/transform-control": "0.98.2",
+    "@maptalks/vt": "0.96.2",
+    "@maptalks/video-layer": "0.98.0"
   }
 }

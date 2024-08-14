@@ -1,7 +1,8 @@
 const { nodeResolve } = require('@rollup/plugin-node-resolve');
 const commonjs = require('@rollup/plugin-commonjs');
 const pkg = require('./package.json');
-const terser = require('rollup-plugin-terser').terser;
+const terser = require('@rollup/plugin-terser');
+const sourcemaps = require('rollup-plugin-sourcemaps');
 
 const outputFile = pkg.main;
 
@@ -12,7 +13,7 @@ outro = `typeof console !== 'undefined' && console.log('${outro}');`;
 
 module.exports = [
     {
-        input: 'index.js',
+        input: './index.js',
         plugins: [
             nodeResolve({
                 module: true,
@@ -20,6 +21,7 @@ module.exports = [
                 main: true
             }),
             commonjs(),
+            sourcemaps(),
             terser({
                 mangle: false,
                 compress: {
@@ -33,12 +35,8 @@ module.exports = [
                 }
             })
         ],
-        external: ['maptalks'],
         output: {
-            globals: {
-                'maptalks': 'maptalks'
-            },
-            sourcemap: false,
+            sourcemap: true,
             banner,
             outro,
             extend: true,
