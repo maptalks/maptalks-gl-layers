@@ -1,5 +1,7 @@
 # maptalks-gl
 
+[![NPM Version](https://img.shields.io/npm/v/maptalks-gl.svg)](https://github.com/maptalks/maptalks-gl-layers)
+
 maptalks webgl 图层的汇总包，包含了[maptalks核心库](https://github.com/maptalks/maptalks.js)和@maptalks命名空间下webgl基础设施和所有webgl图层插件。
 
 使用时无需再单独安装和引入其他webgl插件，而可以统一从此包中安装引用。
