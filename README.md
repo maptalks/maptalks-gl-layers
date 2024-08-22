@@ -81,7 +81,7 @@ groupLayer.addLayer(polygonLayer);
         center: [0, 0],
         zoom: 2
     });
-    const vtLayer = maptalks.VectorTileLayer('vt', {
+    const vtLayer = new maptalks.VectorTileLayer('vt', {
         urlTemplate: 'http://tile.maptalks.com/test/planet-single/{z}/{x}/{y}.mvt'
     });
 
